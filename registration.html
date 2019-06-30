@@ -1,0 +1,46 @@
+<html>
+<head>
+<title> registration form</title>
+</head>
+<body>
+<style>
+  .topright{
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 18px;
+  }  
+</style>
+<form action="details.php" method="post">
+first_name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type = "text" name = "first_name"  required/>
+<br><br><br>
+last_name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type = "text" name = "last_name" required />
+<br><br><br>
+email :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type = "text" name = "email" required/>
+<br><br><br>
+password : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type = "password" name = "password" required/>
+<br><br><br>
+confm_Password : <input type = "password" name = "confm_Password" required/>
+<br><br><br>
+<button onclick="myFunction()"> Submit</button>
+<p id="demo"></p>
+</form>
+<script type ="test/javascript">
+function myFunction() {
+  var password = document.getElementById("demo").innerHTML = password;
+  var confm_Password = document.getElementById("demo").innerHTML = confm_Password;
+  if (password != confm_Password) {
+         alert("Passwords do not match.");
+  }else{
+         return true;
+       }
+}
+</script>
+</body>
+<?php
+echo "<br><a href='login.php'>Already have an account?</a>
+</html>
+<div class="topright">
+<br><a href='logout.php'>Logout</a></div>
+
+    
